@@ -1,17 +1,17 @@
 #ifndef LISTAENCADEADACIRC_H
 #define LISTAENCADEADACIRC_H
 
-typedef struct listaCirc
-{
-    struct node *noInicial;
-    /* data */
-}ListaCirc;
+#include "node.h"
 
-typedef struct node
-{
-    int value;
-    struct node *prox;
-}Node;
 
-ListaCirc criaLista();
+
+typedef struct node *ListaCirc;
+
+ListaCirc* criaLista();
+void adicionaNoNaListaCirc(int, ListaCirc *);
+void esvaziaLista(ListaCirc *);
+void imprimeListaCircular(ListaCirc *);
+int insereNoNaPosicao(int , ListaCirc *, int);
+int insereNoNoInicioDaLista(int, ListaCirc *);
+
 #endif // LISTAENCADEADACIRC_H

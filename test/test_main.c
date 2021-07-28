@@ -12,9 +12,6 @@ void tearDown(void)
 {
 }
 
-void test_main_NeedToImplement(void)
-{
-    TEST_IGNORE_MESSAGE("Need to Implement main");
-}
+
 
 #endif // TEST
