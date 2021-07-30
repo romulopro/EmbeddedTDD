@@ -443,7 +443,7 @@ void test_procuraNoQueEstaNaUltimaPosicao(){
 
     adicionaNoNaListaCirc(3, lc);
 
-    adicionaNoNaListaCirc(4, lc);
+    adicionaNoNaListaCirc(6, lc);
 
     adicionaNoNaListaCirc(5, lc);
 

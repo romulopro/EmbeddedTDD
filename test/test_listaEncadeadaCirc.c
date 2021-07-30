@@ -193,7 +193,7 @@ void test_procuraNoQueEstaNaUltimaPosicao(){
     adicionaNoNaListaCirc(1, lc);
     adicionaNoNaListaCirc(2, lc);
     adicionaNoNaListaCirc(3, lc);
-    adicionaNoNaListaCirc(4, lc);
+    adicionaNoNaListaCirc(6, lc);
     adicionaNoNaListaCirc(5, lc);
     TEST_ASSERT_TRUE(ehExistenteONo(5, lc));
 }
