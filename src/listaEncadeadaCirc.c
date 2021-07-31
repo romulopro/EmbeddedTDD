@@ -54,7 +54,7 @@ void esvaziaLista(ListaCirc *lc)
     }
     return;
 }
-int insereNoNaPosicao(const int valueOfNode, const int posicao,  ListaCirc *lc)
+int insereNoNaPosicao(const int valueOfNode, const int posicao, ListaCirc *lc)
 {
 
     Node *noAtual = *lc;
