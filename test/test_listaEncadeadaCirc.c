@@ -5,7 +5,7 @@
 #include "listaEncadeadaCirc.h"
 #include "node.h"
 
-ListaCirc *lc;
+ListaCirc *  lc;
 void setUp(void)
 {
     lc = criaLista();

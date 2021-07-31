@@ -7,7 +7,7 @@
 
 
 
-ListaCirc *lc;
+ListaCirc * lc;
 
 void setUp(void)
 
