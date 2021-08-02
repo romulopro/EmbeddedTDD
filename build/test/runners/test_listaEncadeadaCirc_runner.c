@@ -93,25 +93,25 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_listaEncadeadaCirc.c");
-  run_test(test_criaListaVazia, "test_criaListaVazia", 22);
-  run_test(test_adicionaNodeInicial, "test_adicionaNodeInicial", 27);
-  run_test(test_PonteiroListaCom1NoSeApontaPraEleMesmo, "test_PonteiroListaCom1NoSeApontaPraEleMesmo", 34);
-  run_test(test_Adiciona2ElementosLista, "test_Adiciona2ElementosLista", 45);
-  run_test(test_Adiciona3ElementosUltimoApontaParaOPrimeiro, "test_Adiciona3ElementosUltimoApontaParaOPrimeiro", 53);
-  run_test(test_Adiciona4ElementosVerificaValorUltimo, "test_Adiciona4ElementosVerificaValorUltimo", 64);
-  run_test(test_esvaziaLista, "test_esvaziaLista", 77);
+  run_test(test_criaListaVazia, "test_criaListaVazia", 23);
+  run_test(test_adicionaNodeInicial, "test_adicionaNodeInicial", 28);
+  run_test(test_PonteiroListaCom1NoSeApontaPraEleMesmo, "test_PonteiroListaCom1NoSeApontaPraEleMesmo", 35);
+  run_test(test_Adiciona2ElementosLista, "test_Adiciona2ElementosLista", 46);
+  run_test(test_Adiciona3ElementosUltimoApontaParaOPrimeiro, "test_Adiciona3ElementosUltimoApontaParaOPrimeiro", 54);
+  run_test(test_Adiciona4ElementosVerificaValorUltimo, "test_Adiciona4ElementosVerificaValorUltimo", 65);
+  run_test(test_esvaziaLista, "test_esvaziaLista", 78);
   run_test(test_insereNoNaPrimeiraPosicao, "test_insereNoNaPrimeiraPosicao", 92);
-  run_test(test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio, "test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio", 105);
-  run_test(test_insereNoNaSegundaPosicao, "test_insereNoNaSegundaPosicao", 112);
-  run_test(test_InsereNoInicioUsandoFnInserindoNoPosicao, "test_InsereNoInicioUsandoFnInserindoNoPosicao", 125);
-  run_test(test_tamanhoListaCircularQuatroElementos, "test_tamanhoListaCircularQuatroElementos", 137);
-  run_test(test_tamanhoListaCircularTresElementos, "test_tamanhoListaCircularTresElementos", 146);
-  run_test(test_tamanhoListaZeroListaVazia, "test_tamanhoListaZeroListaVazia", 154);
-  run_test(test_procuraNoNaListaExistente, "test_procuraNoNaListaExistente", 160);
-  run_test(test_procuraNoQueNaoExiste, "test_procuraNoQueNaoExiste", 169);
-  run_test(test_procuraNoListaVazia, "test_procuraNoListaVazia", 178);
-  run_test(test_procuraNoQueEstaNaPrimeiraPosicao, "test_procuraNoQueEstaNaPrimeiraPosicao", 182);
-  run_test(test_procuraNoQueEstaNaUltimaPosicao, "test_procuraNoQueEstaNaUltimaPosicao", 191);
+  run_test(test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio, "test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio", 104);
+  run_test(test_insereNoNaSegundaPosicao, "test_insereNoNaSegundaPosicao", 111);
+  run_test(test_InsereNoInicioUsandoFnInserindoNoPosicao, "test_InsereNoInicioUsandoFnInserindoNoPosicao", 123);
+  run_test(test_tamanhoListaCircularQuatroElementos, "test_tamanhoListaCircularQuatroElementos", 134);
+  run_test(test_tamanhoListaCircularTresElementos, "test_tamanhoListaCircularTresElementos", 143);
+  run_test(test_tamanhoListaZeroListaVazia, "test_tamanhoListaZeroListaVazia", 151);
+  run_test(test_procuraNoNaListaExistente, "test_procuraNoNaListaExistente", 157);
+  run_test(test_procuraNoQueNaoExiste, "test_procuraNoQueNaoExiste", 166);
+  run_test(test_procuraNoListaVazia, "test_procuraNoListaVazia", 175);
+  run_test(test_procuraNoQueEstaNaPrimeiraPosicao, "test_procuraNoQueEstaNaPrimeiraPosicao", 179);
+  run_test(test_procuraNoQueEstaNaUltimaPosicao, "test_procuraNoQueEstaNaUltimaPosicao", 188);
 
   return UnityEnd();
 }

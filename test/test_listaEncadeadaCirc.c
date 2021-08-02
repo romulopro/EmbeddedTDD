@@ -13,6 +13,7 @@ void setUp(void)
 
 void tearDown(void)
 {
+    imprimeListaCircular(lc);
     esvaziaLista(lc);
     free(lc);
 }
@@ -27,7 +28,7 @@ void test_criaListaVazia(){
 void test_adicionaNodeInicial(){
     
     adicionaNoNaListaCirc(4, lc);
-    imprimeListaCircular(lc);
+    
     TEST_ASSERT_NOT_NULL(*lc);
 }
 
@@ -84,7 +85,6 @@ void test_esvaziaLista(){
     adicionaNoNaListaCirc(7, lc);
     adicionaNoNaListaCirc(8, lc);
     adicionaNoNaListaCirc(4, lc);
-    imprimeListaCircular(lc);
     esvaziaLista(lc);
     TEST_ASSERT_NULL(*lc);
     
@@ -97,7 +97,6 @@ void test_insereNoNaPrimeiraPosicao(){
     adicionaNoNaListaCirc(4, lc);
     adicionaNoNaListaCirc(5, lc);
     insereNoNoInicioDaLista(7, lc);
-    imprimeListaCircular(lc); 
     TEST_ASSERT_EQUAL_INT(7, (*lc)->value);
     
 }
@@ -117,7 +116,6 @@ void test_insereNoNaSegundaPosicao(){
     adicionaNoNaListaCirc(4, lc);
     adicionaNoNaListaCirc(5, lc);
     insereNoNaPosicao(7, 2 ,lc);
-    imprimeListaCircular(lc); 
     TEST_ASSERT_EQUAL_INT(7, (*lc)->prox->value);
     
 }
@@ -130,7 +128,6 @@ void test_InsereNoInicioUsandoFnInserindoNoPosicao(){
     adicionaNoNaListaCirc(4, lc);
     adicionaNoNaListaCirc(5, lc);
     insereNoNaPosicao(7, 1 ,lc);
-    imprimeListaCircular(lc); 
     TEST_ASSERT_EQUAL_INT(7, (*lc)->value);
     
 }

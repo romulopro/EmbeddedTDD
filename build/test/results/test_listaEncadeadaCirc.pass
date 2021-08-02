@@ -4,31 +4,31 @@
   :file: test_listaEncadeadaCirc.c
 :successes:
 - :test: test_criaListaVazia
-  :line: 22
+  :line: 23
   :message: ''
   :unity_test_time: 0
 - :test: test_adicionaNodeInicial
-  :line: 27
+  :line: 28
   :message: ''
   :unity_test_time: 0
 - :test: test_PonteiroListaCom1NoSeApontaPraEleMesmo
-  :line: 34
+  :line: 35
   :message: ''
   :unity_test_time: 0
 - :test: test_Adiciona2ElementosLista
-  :line: 45
+  :line: 46
   :message: ''
   :unity_test_time: 0
 - :test: test_Adiciona3ElementosUltimoApontaParaOPrimeiro
-  :line: 53
+  :line: 54
   :message: ''
   :unity_test_time: 0
 - :test: test_Adiciona4ElementosVerificaValorUltimo
-  :line: 64
+  :line: 65
   :message: ''
   :unity_test_time: 0
 - :test: test_esvaziaLista
-  :line: 77
+  :line: 78
   :message: ''
   :unity_test_time: 0
 - :test: test_insereNoNaPrimeiraPosicao
@@ -36,47 +36,47 @@
   :message: ''
   :unity_test_time: 0
 - :test: test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio
-  :line: 105
+  :line: 104
   :message: ''
   :unity_test_time: 0
 - :test: test_insereNoNaSegundaPosicao
-  :line: 112
+  :line: 111
   :message: ''
   :unity_test_time: 0
 - :test: test_InsereNoInicioUsandoFnInserindoNoPosicao
-  :line: 125
+  :line: 123
   :message: ''
   :unity_test_time: 0
 - :test: test_tamanhoListaCircularQuatroElementos
-  :line: 137
+  :line: 134
   :message: ''
   :unity_test_time: 0
 - :test: test_tamanhoListaCircularTresElementos
-  :line: 146
+  :line: 143
   :message: ''
   :unity_test_time: 0
 - :test: test_tamanhoListaZeroListaVazia
-  :line: 154
+  :line: 151
   :message: ''
   :unity_test_time: 0
 - :test: test_procuraNoNaListaExistente
-  :line: 160
+  :line: 157
   :message: ''
   :unity_test_time: 0
 - :test: test_procuraNoQueNaoExiste
-  :line: 169
+  :line: 166
   :message: ''
   :unity_test_time: 0
 - :test: test_procuraNoListaVazia
-  :line: 178
+  :line: 175
   :message: ''
   :unity_test_time: 0
 - :test: test_procuraNoQueEstaNaPrimeiraPosicao
-  :line: 182
+  :line: 179
   :message: ''
   :unity_test_time: 0
 - :test: test_procuraNoQueEstaNaUltimaPosicao
-  :line: 191
+  :line: 188
   :message: ''
   :unity_test_time: 0
 :failures: []
@@ -88,8 +88,18 @@
   :ignored: 0
 :stdout:
 - '4'
-- 5 3 3 4 4 7 8 4
+- '5'
+- 5 3
+- 5 3 4
+- 9 3 4 1
 - 7 1 2 3 4 5
+- '7'
 - 1 7 2 3 4 5
 - 7 1 2 3 4 5
-:time: 0.003582057999665267
+- 1 2 3 4
+- 1 2 3
+- 1 2 3 4 5
+- 1 2 3 4 5
+- 1 2 3 4 5
+- 1 2 3 6 5
+:time: 0.0042564069999571075

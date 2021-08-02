@@ -23,6 +23,8 @@ void tearDown(void)
 
 {
 
+    imprimeListaCircular(lc);
+
     esvaziaLista(lc);
 
     free(lc);
@@ -43,7 +45,7 @@ void test_criaListaVazia(){
 
    ((void *)0)
 
-   )) {} else {UnityFail( (((" Expected NULL"))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(24))));}} while(0);
+   )) {} else {UnityFail( (((" Expected NULL"))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(25))));}} while(0);
 
 }
 
@@ -55,13 +57,13 @@ void test_adicionaNodeInicial(){
 
     adicionaNoNaListaCirc(4, lc);
 
-    imprimeListaCircular(lc);
+
 
     do {if ((((*lc)) != 
 
    ((void *)0)
 
-   )) {} else {UnityFail( (((" Expected Non-NULL"))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(31))));}} while(0);
+   )) {} else {UnityFail( (((" Expected Non-NULL"))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(32))));}} while(0);
 
 }
 
@@ -77,7 +79,7 @@ void test_PonteiroListaCom1NoSeApontaPraEleMesmo(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(37), UNITY_DISPLAY_STYLE_HEX64);
+   ), (UNITY_UINT)(38), UNITY_DISPLAY_STYLE_HEX64);
 
 }
 
@@ -91,7 +93,7 @@ void adiciona1valorEConfereEle(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(42), UNITY_DISPLAY_STYLE_HEX64);
+   ), (UNITY_UINT)(43), UNITY_DISPLAY_STYLE_HEX64);
 
 }
 
@@ -111,7 +113,7 @@ void test_Adiciona2ElementosLista(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(50), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(51), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -137,7 +139,7 @@ void test_Adiciona3ElementosUltimoApontaParaOPrimeiro(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(61), UNITY_DISPLAY_STYLE_HEX64);
+   ), (UNITY_UINT)(62), UNITY_DISPLAY_STYLE_HEX64);
 
 }
 
@@ -167,7 +169,7 @@ void test_Adiciona4ElementosVerificaValorUltimo(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(74), UNITY_DISPLAY_STYLE_HEX64);
+   ), (UNITY_UINT)(75), UNITY_DISPLAY_STYLE_HEX64);
 
 }
 
@@ -192,8 +194,6 @@ void test_esvaziaLista(){
     adicionaNoNaListaCirc(8, lc);
 
     adicionaNoNaListaCirc(4, lc);
-
-    imprimeListaCircular(lc);
 
     esvaziaLista(lc);
 
@@ -223,13 +223,11 @@ void test_insereNoNaPrimeiraPosicao(){
 
     insereNoNoInicioDaLista(7, lc);
 
-    imprimeListaCircular(lc);
-
     UnityAssertEqualNumber((UNITY_INT)((7)), (UNITY_INT)(((*lc)->value)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(101), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(100), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -247,7 +245,7 @@ void test_inserePrimeiroNoNaListaVaziaUsandoFuncaoAdicionarInicio(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(108), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(107), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -271,13 +269,11 @@ void test_insereNoNaSegundaPosicao(){
 
     insereNoNaPosicao(7, 2 ,lc);
 
-    imprimeListaCircular(lc);
-
     UnityAssertEqualNumber((UNITY_INT)((7)), (UNITY_INT)(((*lc)->prox->value)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(121), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(119), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -301,13 +297,11 @@ void test_InsereNoInicioUsandoFnInserindoNoPosicao(){
 
     insereNoNaPosicao(7, 1 ,lc);
 
-    imprimeListaCircular(lc);
-
     UnityAssertEqualNumber((UNITY_INT)((7)), (UNITY_INT)(((*lc)->value)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(134), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(131), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -329,7 +323,7 @@ void test_tamanhoListaCircularQuatroElementos(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(143), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -349,7 +343,7 @@ void test_tamanhoListaCircularTresElementos(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(151), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(148), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -363,7 +357,7 @@ void test_tamanhoListaZeroListaVazia(){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(156), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(153), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -385,7 +379,7 @@ void test_procuraNoNaListaExistente(){
 
     adicionaNoNaListaCirc(5, lc);
 
-    do {if ((ehExistenteONo(4, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(167)));}} while(0);
+    do {if ((ehExistenteONo(4, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(164)));}} while(0);
 
 }
 
@@ -403,7 +397,7 @@ void test_procuraNoQueNaoExiste(){
 
     adicionaNoNaListaCirc(5, lc);
 
-    do {if (!(ehExistenteONo(7, lc))) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(176)));}} while(0);
+    do {if (!(ehExistenteONo(7, lc))) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(173)));}} while(0);
 
 }
 
@@ -411,7 +405,7 @@ void test_procuraNoListaVazia(){
 
 
 
-    do {if (!(ehExistenteONo(4, lc))) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(180)));}} while(0);
+    do {if (!(ehExistenteONo(4, lc))) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(177)));}} while(0);
 
 }
 
@@ -429,7 +423,7 @@ void test_procuraNoQueEstaNaPrimeiraPosicao(){
 
     adicionaNoNaListaCirc(5, lc);
 
-    do {if ((ehExistenteONo(1, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(189)));}} while(0);
+    do {if ((ehExistenteONo(1, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(186)));}} while(0);
 
 }
 
@@ -447,6 +441,6 @@ void test_procuraNoQueEstaNaUltimaPosicao(){
 
     adicionaNoNaListaCirc(5, lc);
 
-    do {if ((ehExistenteONo(5, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(198)));}} while(0);
+    do {if ((ehExistenteONo(5, lc))) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(195)));}} while(0);
 
 }

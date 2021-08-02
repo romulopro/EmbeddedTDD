@@ -18,6 +18,9 @@ ListaCirc *criaLista()
 void adicionaNoNaListaCirc(int valueOfNode,  ListaCirc *lc)
 {
     Node *novoNo = (Node *)malloc(sizeof(Node));
+    if(novoNo == NULL){
+        return ;
+    }
     Node *noAtual = *lc;
     novoNo->value = valueOfNode;
     if (*lc == NULL)
@@ -28,7 +31,6 @@ void adicionaNoNaListaCirc(int valueOfNode,  ListaCirc *lc)
     }
     while (noAtual->prox != (*lc))
     {
-
         noAtual = noAtual->prox;
     }
     noAtual->prox = novoNo;
@@ -73,12 +75,14 @@ int insereNoNaPosicao(const int valueOfNode, const int posicao, ListaCirc *lc)
         noAtual = noAtual->prox;
     }
     Node *novoNo = (Node *)malloc(sizeof(Node));
+    if(novoNo == NULL){
+        return 0;
+    }
     novoNo->value = valueOfNode;
-
     aux = noAtual->prox;
     noAtual->prox = novoNo;
     novoNo->prox = aux;
-    return 0;
+    return 1;
 }
 int insereNoNoInicioDaLista(const int valueOfNode, ListaCirc *lc)
 {
@@ -86,11 +90,16 @@ int insereNoNoInicioDaLista(const int valueOfNode, ListaCirc *lc)
     Node *noAtual = *lc;
     Node *aux = NULL;
     Node *novoNo = (Node *)malloc(sizeof(Node));
-    novoNo->value = valueOfNode;
+    
+    if(novoNo == NULL){
+        return 0;
+    }
+    
     if (lc == NULL)
     {
         return 0;
     }
+    novoNo->value = valueOfNode;
     if (*lc == NULL)
     {
         *lc = novoNo;
@@ -133,13 +142,14 @@ int tamanhoListaCircular(const ListaCirc *lc){
     {   
         return 0;
     }
-    do{
+    do
+    {
         tamanhoLista+=1;
         noAtual = noAtual->prox;
     }
     while (noAtual != (*lc));
-    
     return tamanhoLista;
+    
 }
 bool ehExistenteONo(const int valorDoNo, const ListaCirc* lc){
     Node *noAtual = NULL;
